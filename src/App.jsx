@@ -13,9 +13,9 @@ function App() {
     <AuthProvider>
       <div className="App">
         <Routes >
-          <Route path='/' element={<Home />} />
-          <Route path='cart' element={<Cart />} />
-          <Route path='perfil' element={<Perfil />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='cart' element={<Cart />} />
+          <Route exact path='perfil' element={<Perfil />} />
         </Routes>
         {auth ? <Menu /> : null}
       </div>
