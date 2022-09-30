@@ -14,7 +14,7 @@ export async function loginApi(formData) {
     console.log(BASE_API);
     try {
         //const cors = 'https://cors-anywhere.herokuapp.com/'
-        const url = `${BASE_API}/auth/login`
+        const url = `https://justcors.com/l_of9ypjvho9/${BASE_API}/auth/login`
         //const url = 'https://cors-anywhere.herokuapp.com/virpos.online/virpos/auth/login'
         const params = {
             method: 'POST',
@@ -33,7 +33,7 @@ export async function loginApi(formData) {
         /*if (response.status !== 200) {
             throw new Error("Usuario o contraseña incorrectos");
         }*/
-        //const result = await response;
+        const result = await response.json();
         console.log(url);
         return response.status
     } catch (error) {
