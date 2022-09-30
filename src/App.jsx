@@ -12,7 +12,7 @@ function App() {
   return (
     <AuthProvider>
       <div className="App">
-        <Routes basename={process.env.PUBLIC_URL} >
+        <Routes >
           <Route path='/' element={<Home />} />
           <Route path='cart' element={<Cart />} />
           <Route path='perfil' element={<Perfil />} />
